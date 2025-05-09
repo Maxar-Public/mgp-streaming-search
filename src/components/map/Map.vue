@@ -262,7 +262,7 @@ setup(props, {emit}) {
     var cql_filter = ""
     if(featureMetadata.properties.legacyIdentifier) cql_filter = "&cql_filter=legacyIdentifier%3D%27" + featureMetadata.properties.legacyIdentifier + "%27";
     const url = "https://api.maxar.com/streaming/v1/ogc/wms?&service=WMS&request=GetMap" + cql_filter;
-    const myKey = "M2Q2MjEwZDctYWRmZi00ZDNhLWFhYTAtNDM3YjliYzg5MTRm";
+    const myKey = import.meta.env.VITE_API_KEY;
 
     //Other endpoint parameters
     const mapOptions = {

@@ -1,6 +1,5 @@
 import errorStore from '../stores/errorStore'
 
-//const baseUrl = "https://api.maxar.com/discovery/v1"
 const baseUrl = "https://api.maxar.com"
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -21,7 +20,9 @@ export const fetchSensors = () => {
         'GE01',
         'QB02',
         'LG01',
-        'LG02'
+        'LG02',
+        'LG03',
+        'LG04'
     ];
   };
 
